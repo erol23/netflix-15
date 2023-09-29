@@ -32,6 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .title{
@@ -44,10 +45,25 @@
 
 .form-group{
     background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    padding: 1rem;
+}
+.form-margin{
+    margin: 0.1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
 }
 .form-items{
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
+}
+
+.submit{
+    background-color: red;
+    width: 40%;
+    margin: auto;
 }
