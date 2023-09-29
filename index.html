@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Netflix</title>
 </head>
 <body>
@@ -10,24 +11,24 @@
         <div class="background">
             <div class="container">
                 <div class="title">
-                    <h1><span>NET</span>FLIX</h1>
+                    <h1>NET<span>FLIX</span></h1>
                     <p>Thank you for signing up at Netflix. Tell us more about youself.</p>
                 </div>
                 <div class="form-group">
                     <form >
-                        <div>
+                        <div class="form-items">
                             <label for="name" >Name</label>
                             <input type="text" placeholder="Enter your name" id="name">
                         </div>
-                        <div>
+                        <div class="form-items">
                             <label for="age">Age</label>
                             <input type="number" placeholder="Enter your age" id="age">
                         </div>
-                        <div>
+                        <div class="form-items">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="please enter your email" id="email">
+                            <input type="email" placeholder="please enter your email" id="email" required>
                         </div>
-                        <div>
+                        <div class="form-items">
                             <label for="content">Content type</label>
                             <select name="" id="content">
                                 <option value="series">Series</option>
@@ -35,21 +36,22 @@
                             </select>
                         </div>
                         <div>
-                            <label for="">Movie type</label>
-                            <input type="checkbox">Comedy
-                            <input type="checkbox">Action
+                            <label for="">Movie type</label><br>
+                            <input type="checkbox">Comedy<br>
+                            <input type="checkbox">Action<br>
                             <input type="checkbox" checked>Romance
                         </div>
                         <div>
-                            <label for="">Gender</label>
-                            <input type="radio" name="gender" id="male">Male
-                            <input type="radio" name="gender" id="female">Female
+                            <label for="">Gender</label><br>
+                            <input type="radio" name="gender" id="male">Male<br>
+                            <input type="radio" name="gender" id="female">Female<br>
                             <input type="radio" name="gender" id="other">Other
                         </div>
-                        <div>
+                        <div class="form-items">
                             <label for="">Feed back</label>
                             <textarea name="" id="" cols="30" rows="10" placeholder="Any comment"></textarea>
                         </div>
+                        <button class="submit" type="submit">Submit</button>
 
                     </form>
                 </div>
